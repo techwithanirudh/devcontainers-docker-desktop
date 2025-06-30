@@ -4,23 +4,16 @@
 		"dockerfile": "Dockerfile"
 	},
 	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": "true",
+			"username": "vscode",
+			"userUid": "1000",
+			"userGid": "1000",
+			"upgradePackages": "true"
+		},
 		"ghcr.io/devcontainers/features/git:1": {
 			"version": "latest",
 			"ppa": "false"
-		}
-	},
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"dbaeumer.vscode-eslint"
-			],
-			"settings": {
-				"github.copilot.chat.codeGeneration.instructions": [
-					{
-						"text": "This dev container includes the TypeScript compiler (`tsc`) pre-installed and available on the `PATH` for TypeScript development."
-					}
-				]
-			}
 		}
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
