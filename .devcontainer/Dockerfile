@@ -1,4 +1,4 @@
-FROM codercom/enterprise-desktop:ubuntu
+FROM codercom/enterprise-desktop:latest
 
 ENV SHELL=/bin/bash
 
